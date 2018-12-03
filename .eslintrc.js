@@ -21,14 +21,7 @@ module.exports = {
         // 这里填入你的项目需要的个性化配置，比如：
         //
         // // @fixable 一个缩进必须用两个空格替代
-        'indent': [
-            'error',
-            2,
-            {
-                SwitchCase: 1,
-                flatTernaryExpressions: true
-            }
-        ],
+        'indent': 0,
         'no-undef-init': 1,
         'no-trailing-spaces': 0,
         'no-undefined': 0,
@@ -40,6 +33,8 @@ module.exports = {
             "named": "always",
             "asyncArrow": "always"
         }],        
+        'semi':0,
+        'object-curly-spacing':0
     },
     
 };
