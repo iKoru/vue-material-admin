@@ -117,7 +117,7 @@ const Menu =  [
     group: 'extra',
     icon: 'list',
     items: [
-      { name: 'Login', title: 'Login', component: 'Login' },
+      { name: 'Signin', title: 'Signin', component: 'Signin' },
       { name: '404', title: '404', component: 'NotFound' },
       { name: '403', title: '403', component: 'AccessDenied' },
       { name: '500', title: '500', component: 'ServerError' },
