@@ -9,7 +9,14 @@ import './theme/default.styl';
 import VeeValidate from 'vee-validate';
 import colors from 'vuetify/es5/util/colors';
 import Truncate from 'lodash.truncate';
+import store from './store';
+import config from './config';
+import axios from 'axios';
+
+window.config = config;
+
 Vue.config.productionTip = false;
+Vue.prototype.$http = axios;
 // Helpers
 // Global filters
 Vue.filter('truncate', Truncate);
@@ -43,5 +50,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store
 });

@@ -5,15 +5,16 @@
   "author": "Micahel Wang <wangqiangshen@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "dev": "webpack-dev-server --inline --progress --port 8081 --host 0.0.0.0 --disable-host-check --config build/webpack.dev.conf.js",
+    "start": "yarn dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
+    "test": "yarn unit && yarn e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "font-awesome": "^4.7.0",
     "lodash.truncate": "^4.4.2",
     "nprogress": "^0.2.0",
@@ -25,7 +26,8 @@
     "vue-quill-editor": "^3.0.6",
     "vue-resize": "^0.4.4",
     "vue-router": "^3.0.1",
-    "vuetify": "^1.1.0-alpha.5"
+    "vuetify": "^1.1.0-alpha.5",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
