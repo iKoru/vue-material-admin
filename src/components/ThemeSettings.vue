@@ -53,7 +53,7 @@ import colors from 'vuetify/es5/util/colors';
 export default {
   data () {
     return {
-      themeColor: 'indigo',
+      themeColor: 'red',
       sideBarOption: 'light',
       colors: colors
     };
@@ -69,14 +69,14 @@ export default {
             sideManu: 'white'
           }
         },
-        // {
-        //   key: 'lightBlue',
-        //   value: {
-        //     sideNav: 'blue',
-        //     mainNav: 'white',
-        //     sideManu: 'blue lighten-1'
-        //   }
-        // },
+        {
+          key: 'lightBlue',
+          value: {
+            sideNav: 'blue',
+            mainNav: 'white',
+            sideManu: 'blue lighten-1'
+          }
+        },
         {
           key: 'teal',
           value: {
